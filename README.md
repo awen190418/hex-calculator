@@ -3,11 +3,19 @@ While i was working with RTP Streaming, i had to interpret the packet type by in
 e.g.,
 
 HEX     :FF
+
 Binary  :1111 1111
 
 
+
+
 HEX     :01
+
 Binary  :0000 0001
 
+
+
+
 HEX     :E1
+
 Binary  :1110 0001
