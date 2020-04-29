@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://calc.50x.eu/?size=1&dec=0 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter</title>
+    <link rel="shortcut icon" href="http://calc.50x.eu/favicon.ico">
+       
+                <link rel="stylesheet" href="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/clickmenu.css">
+                    <link href="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/calc.css" type="text/css" rel="stylesheet">
+</head><body id="bd-main">
+    
+    <div id="mf"><div id="loading" style="display: none;"><img src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/loading.gif" title="Loading - please wait..." alt="loading"></div>
+        
+        <div id="container" style="width: 900px; display: block;">
+            
+            <div id="header"><h1 class="title" title="hexadecimal to decimal, octal to decimal, binary to hexadecimal, binary to decimal, binary converter, convert hex to decimal, hex to bin, decimal to hex"><a href="http://calc.50x.eu/index.html" title="Binary to Decimal converter">Hexadecimal Decimal Binary Octal Converter <br>for programmers</a></h1>
+                <h1 class="subtitle"><a href="http://calc.50x.eu/index.html" title="Binary to Decimal converter">Binary to Decimal</a>, <a href="http://calc.50x.eu/index.html" title="Binary to Hexadecimal converter">Binary to Hexadecimal</a>, <a href="http://calc.50x.eu/index.html" title="convert to Ascii">Hex ASCII</a>, <a href="http://calc.50x.eu/index.html" title="convert to Ascii">ASCII Binary</a>, <a href="http://calc.50x.eu/index.html" title="hex to decimal converter">Hexadecimal to Decimal</a></h1>
+                
+                
+                <div class="cmDiv"><ul id="menu" style="margin: 7px 150px;" class="clickMenu">
+                    <li class="main"><img src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/try-more.jpg" width="120" height="20" alt="Try more">
+                        <div class="outerbox inner" style="position: absolute;"><div class="shadowbox1"></div><div class="shadowbox2"></div><div class="shadowbox3"></div><ul class="innerBox">
+                            <li><a href="http://unixtimestamp.50x.eu/" title="UNIX timestamp epoch batch converter">UNIX timestamp converter</a></li>
+                        </ul></div>
+                        </li>
+                </ul><div style="clear: both; visibility: hidden;"></div></div>
+                
+                <div id="addthis">
+                    <script type="text/javascript" async="" src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/ga.js"></script><script type="text/javascript" src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/sharethis.js"></script>
+                </div>
+                
+            </div>
+            
+            <div id="left">
+                <form id="calc" action="http://calc.50x.eu/index.html#">
+                    <div id="intro"><div>
+                        <h2 style="font-weight:normal" title="Hexadecimal converter, decimal converter, octal converter, binary converter">Hexadecimal Decimal Binary and Octal Converter</h2> allows you to convert the same number between its representations under different number systems. You can choose lenght of numbers from 8 to 32 bits. From / to <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank" title="American Standard Code for Information Interchange (ASCII)"><strong>ASCII</strong></a> characters you can convert only 8-bits numbers.</div></div>
+                    <fieldset id="bitsize">
+                        <a id="current_state" href="http://calc.50x.eu/?size=1&amp;dec=4" title="Base converter: current state (you can use: hex, dex, oct, bin)">Current state</a>
+                        
+                        <select id="size" name="size">
+                            <option value="1">8 bits</option>
+                            <option value="2">16 bits</option>
+                            <option value="3" selected="selected">24 bits</option>
+                            <option value="4">32 bits</option>
+                        </select>
+                        <input id="clear" type="button" value="Clear" title="click to clear Base Converter">
+                            </fieldset>
+                    
+                    <fieldset id="numbers"><legend title="Number base converter">Number base converter</legend>
+                        <div>
+                            <label title="Hexadecimal converter">Hex<br>
+                                <input type="text" id="f16" name="hex" maxlength="3" title="enter hexadecimal number, digits 0 to 9, A to F" size="3">
+                                    </label>
+                            
+                            <label title="Decimal converter">Dec<br>
+                                <input type="text" id="f10" name="dec" maxlength="4" title="enter decimal number, digits 0 to 9" size="4">
+                                    </label>
+                            
+                            <label title="Octal converter">Oct<br>
+                                <input type="text" id="f8" name="oct" maxlength="4" title="enter octal number, digits 0 to 7" size="4">
+                                    </label>
+                            
+                            <label title="Binary converter">Bin<br>
+                                <input type="text" id="f2" name="bin" maxlength="9" title="enter binary number, digits 0 or 1" size="9">
+                                    </label>
+                            
+                            <label id="ascii" title="ASCII converter">ASCII<br>
+                                <input type="text" id="fa" name="ascii" maxlength="2" title="enter ASCII character" class="off">
+                                    </label>
+                        </div>
+                    </fieldset>
+                </form>
+                
+                <div id="bitframe">
+                    <h3>Set or clear bits directly</h3>
+                    <div id="bits">
+                        <div id="bits_0" title="1st byte value=4, hex=0x04">
+                            
+                            <div class="bd">
+                                <span class="bdl">0</span>
+                                <span class="bdr">7</span>
+                            </div>
+                            <b id="b0" title="0th bit, value=1, hex=0x01">0</b>
+                            <b id="b1" title="1st bit, value=2, hex=0x02">0</b>
+                            <b id="b2" title="2nd bit, value=4, hex=0x04">1</b>
+                            <b id="b3" title="3rd bit, value=8, hex=0x08">0</b>
+                            <b id="b4" title="4th bit, value=16, hex=0x10">0</b>
+                            <b id="b5" title="5th bit, value=32, hex=0x20">0</b>
+                            <b id="b6" title="6th bit, value=64, hex=0x40">0</b>
+                            <b id="b7" title="7th bit, value=128, hex=0x80">0</b>
+                        </div>
+                        
+                        <div id="bits_1" title="2nd byte value=0, hex=0x00" style="display: none;">
+                            <div class="bd">
+                                <span class="bdr">15</span>
+                                <span class="bdl">8</span>
+                            </div>
+                            <b id="b8" title="8th bit, value=256, hex=0x0100">0</b>
+                            <b id="b9" title="9th bit, value=512, hex=0x0200">0</b>
+                            <b id="b10" title="10th bit, value=1024, hex=0x0400">0</b>
+                            <b id="b11" title="11th bit, value=2048, hex=0x0800">0</b>
+                            <b id="b12" title="12th bit, value=4096, hex=0x1000">0</b>
+                            <b id="b13" title="13th bit, value=8192, hex=0x2000">0</b>
+                            <b id="b14" title="14th bit, value=16384, hex=0x4000">0</b>
+                            <b id="b15" title="15th bit, value=32768, hex=0x8000">0</b>
+                        </div>
+                        
+                        
+                        
+                        <div id="bits_2" title="3rd byte value=0, hex=0x00" style="display: none;">
+                            <div class="bd">
+                                <span class="bdr">23</span>
+                                <span class="bdl">16</span>
+                            </div>
+                            <b id="b16" title="16th bit, value=65536, hex=0x010000">0</b>
+                            <b id="b17" title="17th bit, value=131072, hex=0x020000">0</b>
+                            <b id="b18" title="18th bit, value=262144, hex=0x040000">0</b>
+                            <b id="b19" title="19th bit, value=524288, hex=0x080000">0</b>
+                            <b id="b20" title="20th bit, value=1048576, hex=0x100000">0</b>
+                            <b id="b21" title="21th bit, value=2097152, hex=0x200000">0</b>
+                            <b id="b22" title="22th bit, value=4194304, hex=0x400000">0</b>
+                            <b id="b23" title="23th bit, value=8388608, hex=0x800000">0</b>
+                        </div>
+                        
+                        <div id="bits_3" title="4th byte value=0, hex=0x00" style="display: none;">
+                            <div class="bd">
+                                <span class="bdr">32</span>
+                                <span class="bdl">24</span>
+                            </div>
+                            <b id="b24" title="24th bit, value=16777216, hex=0x01000000">0</b>
+                            <b id="b25" title="25th bit, value=33554432, hex=0x02000000">0</b>
+                            <b id="b26" title="26th bit, value=67108864, hex=0x04000000">0</b>
+                            <b id="b27" title="27th bit, value=134217728, hex=0x08000000">0</b>
+                            <b id="b28" title="28th bit, value=268435456, hex=0x10000000">0</b>
+                            <b id="b29" title="29th bit, value=536870912, hex=0x20000000">0</b>
+                            <b id="b30" title="30th bit, value=1073741824, hex=0x40000000">0</b>
+                            <b id="b31" title="31st bit, value=2147483648, hex=0x80000000">0</b>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div style="margin-top: 60px; text-align: center;">
+                    
+                    <h4>You can use also <a href="http://unixtimestamp.50x.eu/" title="UNIX time stamp to human time converter" style="text-decoration: underline;">UNIX timestamp to Human time converter</a></h4>
+                </div>
+                
+                <br><br>
+                
+            </div>
+            
+            <div id="right">
+                <table cellpadding="2" cellspacing="0" class="def">
+                    <thead>
+                        <tr>
+                            <th class="hex" title="Hexadecimal numbers"><a href="http://en.wikipedia.org/wiki/Hexadecimal" target="_blank">Hex</a></th>
+                            <th class="dec" title="Ddecimal numbers"><a href="http://en.wikipedia.org/wiki/Decimal" target="_blank">Dec</a></th>
+                            <th class="oct" title="Octal numbers"><a href="http://en.wikipedia.org/wiki/Octal" target="_blank">Oct</a></th>
+                            <th class="bin" title="Binary numbers"><a href="http://en.wikipedia.org/wiki/Binary_numeral_system" target="_blank">Bin</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><i>000</i>0</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td><i>000</i>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td><i>00</i>10</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td><i>00</i>11</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td><i>0</i>100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td><i>0</i>101</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td><i>0</i>110</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>7</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td><i>0</i>111</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>9</td>
+                            <td>9</td>
+                            <td>11</td>
+                            <td>1001</td>
+                        </tr>
+                        <tr>
+                            <td>A</td><td>10</td>
+                            
+                            <td>12</td>
+                            <td>1010</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>B</td><td>11</td>
+                            
+                            <td>13</td>
+                            <td>1011</td>
+                        </tr>
+                        <tr>
+                            <td>C</td><td>12</td>
+                            
+                            <td>14</td>
+                            <td>1100</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>D</td><td>13</td>
+                            
+                            <td>15</td>
+                            <td>1101</td>
+                        </tr>
+                        <tr>
+                            <td>E</td><td>14</td>
+                            
+                            <td>16</td>
+                            <td>1110</td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>F</td><td>15</td>
+                            
+                            <td>17</td>
+                            <td>1111</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            
+            <div id="footer">
+                © Vimtech Ltd 2009
+                <a href="http://calc.50x.eu/about" title="About Hexadecimal Decimal Binary and Octal Converter">About Hex Decimal Binary Calculator</a>
+                <span>Version 0.3</span>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <script src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/clickmenu.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        CFG = {url:'http://calc.50x.eu.dev/',ajax_url:'/js/'};
+        $(document).ready(function()
+                          {
+                          $('#menu').clickMenu();
+                          });
+        </script>
+    <script type="text/javascript" src="./Online Hex Dec Bin Oct converter for programmers, direct access to all bits. Binary to Decimal, Binary to Hexadecimal, Hex Ascii, Ascii Binary, Hex Dec converter_files/calc.js"></script>
+    
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1176836-14']);
+        _gaq.push(['_setDomainName', '.50x.eu']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+        </script>
+    
+    
+    
+</body></html>

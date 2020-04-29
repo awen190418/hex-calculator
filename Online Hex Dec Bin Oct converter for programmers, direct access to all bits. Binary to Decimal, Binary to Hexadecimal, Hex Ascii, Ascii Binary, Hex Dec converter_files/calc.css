@@ -1,0 +1,304 @@
+body {
+	width: 960px;
+	color: #555;
+	margin: 0 auto;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+#loading {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 200px;
+}
+#container {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	display: none;
+}
+
+#header {
+	background: url(../img/calc/calculator.png) no-repeat top left;
+	width: 100%;
+	height: 120px;
+	border: 1px solid white;
+	margin: 0;
+	position: relative;
+}
+
+#header h1.subtitle {
+	position: absolute;
+	top: 73px; left: 405px;
+	margin: 0;
+	font-size: 11px;
+	color: #777;
+	font-weight:normal;
+	color:#8b8c8b;
+	width: 350px;
+}
+
+#header h1.title {
+	position: absolute;
+	top: 48px; left: 220px;
+	margin: 0;
+	font-size: 21px;
+	color: #777;
+	font-weight:bold;
+}
+
+#header h1.title a {color:#777;}
+#header h1.subtitle a {color:#8b8c8b;}
+
+a {text-decoration: none;}
+p {font-size: 12px;}
+
+#left {
+	float: left;
+	width: 87%;
+}
+#right {
+	float: right;
+	width: 13%;
+	text-align: right;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	font-size: 10px;
+	padding-top: 50px;
+	text-align: center;
+}
+#footer a {
+	padding: 0 10px;
+	color: #555;
+	}
+
+#addthis {
+	position: absolute;
+	right: 30px;
+	top: 10px;
+	font-size:12px;
+}
+a#current_state {
+	background: url(../img/link.png) no-repeat left;
+	padding-left: 34px;
+	text-decoration: none;
+	color: #0531F9;
+	margin-bottom: 4px;
+	font-size: 12px;
+	display: block;
+}
+a#current_state:hover {color: #F09700;}
+
+/*   --- BITS ---  */
+
+/*
+#bits div, #bits_0, #bits_1, #bits_2, #bits_3 {width: 192px; margin: 0; }
+#bits div.bbox {float: left !important;}
+#bits div.bbox2 {clear: both; cursor: default;}
+#bits .bdl {float: left; font-size: 9px; padding-left: 7px;}
+#bits .bdr {float: right; font-size: 9px; padding-right: 7px;}
+.msb, .lsb {float: left; font-size: 9px; color: #FE891D; padding-top: 17px; border: 0; cursor: help;}
+#bits div.bbox2 span {white-space:nowrap;}
+span.bit1, span.bit2 {display: block; float: left; text-align: center;}
+span.bit1 {width: 95px; background: #CECECE; border-left: 1px solid #999; }
+span.bit2 {width: 95px; background: #E7E7E7; border-right: 1px solid #BBB; }
+#bits #bitsframe {
+display:table;
+margin:0 auto;
+width:auto !important;
+padding: 0;
+}
+
+*/
+#bitframe {margin-left: 30px;}
+#bitframe h3 {font-size: 12px; margin: 0 0 8px 0; padding: 0; text-align: center;}
+#bits, #bitframe {
+display:table;
+width:auto !important;
+padding: 0;
+}
+#bits {
+border: 1px solid #CCC;
+}
+#bits b {
+	display: block;
+	width: 20px;
+    margin: 3px 0 0 0;
+	padding: 0;
+	text-align: center;
+	float: left;
+	cursor: pointer; cursor: hand;
+	}
+	
+#bits_0, #bits_1, #bits_2, #bits_3 {float: left; margin: 0; padding: 0; display: table; width: 160px; }
+#bits_0, #bits_2  {background: #f8f8f8; }
+#bits_1, #bits_3  {background: #e7e7e7;}
+
+.bd {width: 160px; display: table; padding-top: 3px;}
+.bdl {float: left; font-size: 9px; padding-left: 7px;}
+.bdr {float: right; font-size: 9px; padding-right: 7px;}
+
+#bdetails {}
+#bimage {float: left;}
+#bdesc {
+	margin-top: 7px;
+	float: left;
+	padding: 0;
+}
+
+
+#b0,#b1, #b2, #b3,
+#b8, #b9, #b10, #b11,
+#b16, #b17, #b18, #b19,
+#b24, #b25, #b26, #b27 {
+	color: orange;	
+	}
+
+/* end BITS */
+
+
+
+
+
+
+#cals {display: none;}
+
+#hex {font-family: Lucidatypewriter, monospace;}
+
+.bit {
+	border-top: 1px solid #C3C3C3;
+	border-bottom: 1px solid #C3C3C3;
+	background: #C3C3C3;
+	cursor: default;
+	margin: 0;
+}
+.bit span {background: #E1E1E1; margin: 0;}
+
+table.def {border: 1px solid #ddd; font-size: 11px; border-collapse: collapse; text-align: center; float: right;}
+table.def td, table.def th {border: 1px solid #ddd; padding: 1px 3px;}
+table.def th a {color: #000;}
+table.def th.hex {background:#FBDDC4; }
+table.def th.dec {background:#DBF0EF; }
+table.def th.oct {background:#E8E3F4; }
+table.def th.bin {background:#E5F9C9; }
+tr.tr1 td {background: #F2F2F2;}
+
+table.def i {color: #C8C8C8; font-style: normal;}
+
+#calc fieldset {border: 0; padding: 10px;}
+#calc fieldset#bits {padding: 10px 2px;}
+#calc fieldset legend {
+	font-size: 22px;
+	letter-spacing: +1px;
+	line-height: 1.2em;
+	display: none;
+}
+#numbers {border-top: 1px solid #F0F0F0 !important; margin-bottom: 15px; clear: both; text-align: center; width: 97%;}
+#numbers label {
+	display: block;
+	float: left;
+	margin-right: 15px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#numbers label.b32 {margin-right: 10px !important;}
+#numbers input.b32  {font-size: 1.10em !important;}
+#numbers div {display: table; margin: 0 auto; text-align: left; padding-left: 15px; width:auto; min-width: auto !important;}
+
+#intro {float: left; width: 68%; line-height: 2.5ex; font-size:12px;}
+#intro div {padding: 20px 0 20px 30px;}
+#intro a {color: #464646;}
+#intro a:hover {color: #E69102;}
+#intro h2 {display: inline; font-size: 12px; padding: 0; margin: 0;}
+#intro h1 {font-size: 22px; line-height: 2.5ex; letter-spacing: -1px;}
+#intro h1 a {color: #F90;}
+#intro h1 a:hover {color: #555;}
+
+#bitsize {width: 200px; float: right; margin: 20px 0 0 0;}
+
+#size {
+	font-size:10pt; 
+	background-color:#F89300; 
+	color: #fff; 
+	border: 1px solid #6B6B6B; 
+	font-weight: bold;
+}
+
+#clear {
+	border: 1px solid #ddd;
+	background: #F1F1F1 url(../img/calc/button.png) repeat-x left;
+	color: #F39000;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 10px;
+	margin: 10px 0 0 20px;
+	cursor: pointer; cursor: hand;
+	-moz-border-radius: 4px;
+}
+
+#f16, #f10, #f8, #f2, #fa {
+	font-family: Lucidatypewriter, monospace;
+	/* font-size: 1.38em !important; */
+	font-size: 1.10em !important;
+	border: 2px solid #C4C4C4;
+	color: #000;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	-moz-border-radius: 6px;
+}
+
+#f16 {background: #FBDDC4;}
+#f10 {background: #DBF0EF;}
+#f8 {background: #E8E3F4;}
+#f2 {background: #E5F9C9;}
+#fa {width: 45px; text-align: center; text-transform: none;}
+#fa.off {background: #E7E7E7; color: #888;}
+
+#routine {display: none;}
+
+ div.recommendation {
+ 	width: 730px;
+ 	clean: both;
+ 	padding: 0 0 0 10px;
+ 	margin: 0 0 0 15px;
+ }
+ div.recommendation h3 {
+ 	font-size: 16px;
+ 	margin: 0;
+ 	padding: 0 0 5px 0; 
+ }
+ div.recommendation p {
+    padding: 0;
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+ }
+ div.recommendation img {
+   margin-right: 5px;
+   padding: 0;
+   border: 1px solid #ddd;
+ }
+
+
+
+div.cmDiv { background-color: white; }
+.clickMenu ul
+{
+	padding: 5px;
+	background-color: white;
+}
+.clickMenu li
+{
+	padding: 2px 20px 2px 2px;
+	white-space: nowrap;
+	font-size: 13px;
+}
+.clickMenu li.hover
+{
+	background-color: #EEE;
+}
+
+ 
