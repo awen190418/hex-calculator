@@ -8,3 +8,6 @@ Binary  :1111 1111
 
 HEX     :01
 Binary  :0000 0001
+
+HEX     :E1
+Binary  :1110 0001
